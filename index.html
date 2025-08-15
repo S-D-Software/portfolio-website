@@ -78,35 +78,89 @@
             </div>
 
             <div class="hero-visual">
-                <div class="code-window">
-                    <div class="window-header">
-                        <div class="window-controls">
-                            <div class="control"></div>
-                            <div class="control"></div>
-                            <div class="control"></div>
+                <div class="slider-container">
+                    <div class="floating-element floating-1"></div>
+                    <div class="floating-element floating-2"></div>
+                    <div class="floating-element floating-3"></div>
+                    
+                    <div class="slider-wrapper">
+                        <div class="slider">
+                            <div class="slides" id="slides">
+                                <div class="slide">
+                                    <div class="slide-mockup">
+                                        <div class="mockup-header">
+                                            <div class="mockup-dot"></div>
+                                            <div class="mockup-dot"></div>
+                                            <div class="mockup-dot"></div>
+                                        </div>
+                                        <div class="mockup-content">E-Commerce Platform</div>
+                                    </div>
+                                    <div class="slide-content">
+                                        <h3>E-Commerce Solutions</h3>
+                                        <p>Modern online stores with seamless user experience and powerful admin panels</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="slide">
+                                    <div class="slide-mockup">
+                                        <div class="mockup-header">
+                                            <div class="mockup-dot"></div>
+                                            <div class="mockup-dot"></div>
+                                            <div class="mockup-dot"></div>
+                                        </div>
+                                        <div class="mockup-content">SaaS Dashboard</div>
+                                    </div>
+                                    <div class="slide-content">
+                                        <h3>SaaS Applications</h3>
+                                        <p>Cloud-based software solutions that scale with your business needs</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="slide">
+                                    <div class="slide-mockup">
+                                        <div class="mockup-header">
+                                            <div class="mockup-dot"></div>
+                                            <div class="mockup-dot"></div>
+                                            <div class="mockup-dot"></div>
+                                        </div>
+                                        <div class="mockup-content">Mobile App Interface</div>
+                                    </div>
+                                    <div class="slide-content">
+                                        <h3>Mobile Applications</h3>
+                                        <p>Native and cross-platform mobile apps for iOS and Android</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="slide">
+                                    <div class="slide-mockup">
+                                        <div class="mockup-header">
+                                            <div class="mockup-dot"></div>
+                                            <div class="mockup-dot"></div>
+                                            <div class="mockup-dot"></div>
+                                        </div>
+                                        <div class="mockup-content">Corporate Website</div>
+                                    </div>
+                                    <div class="slide-content">
+                                        <h3>Corporate Websites</h3>
+                                        <p>Professional websites that represent your brand with modern design</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="file-name">innovation.js</div>
-                    </div>
-                    <div class="code-content">
-                        <span class="code-line"><span class="keyword">const</span> <span class="function">future</span> = <span class="keyword">await</span> <span class="function">SDSoftware</span>.<span class="property">create</span>({</span>
-                        <span class="code-line">  <span class="property">innovation</span>: <span class="string">'unlimited'</span>,</span>
-                        <span class="code-line">  <span class="property">performance</span>: <span class="string">'blazing-fast'</span>,</span>
-                        <span class="code-line">  <span class="property">scalability</span>: <span class="string">'infinite'</span></span>
-                        <span class="code-line">});</span>
-                        <span class="code-line"><span class="comment">// Your dreams, our code ✨</span></span>
-                    </div>
-                </div>
-
-                <div class="feature-cards">
-                    <div class="feature-card">
-                        <div class="feature-icon">⚡</div>
-                        <h3>Lightning Fast</h3>
-                        <p>Optimized for speed and performance</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">🔒</div>
-                        <h3>Enterprise Security</h3>
-                        <p>Bank-grade security protocols</p>
+                        
+                        <div class="nav-arrows prev" onclick="previousSlide()">
+                            <div class="arrow"></div>
+                        </div>
+                        <div class="nav-arrows next" onclick="nextSlide()">
+                            <div class="arrow"></div>
+                        </div>
+                        
+                        <div class="slider-nav">
+                            <div class="nav-dot active" onclick="goToSlide(0)"></div>
+                            <div class="nav-dot" onclick="goToSlide(1)"></div>
+                            <div class="nav-dot" onclick="goToSlide(2)"></div>
+                            <div class="nav-dot" onclick="goToSlide(3)"></div>
+                        </div>
                     </div>
                 </div>
             </div>

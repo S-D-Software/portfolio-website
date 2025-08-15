@@ -68,6 +68,55 @@ function initHeaderScroll() {
 }
 
 // ==============================================
+// Hero Slider
+// ==============================================
+function initHeroSlider() {
+    let currentSlide = 0;
+    const slides = document.getElementById('slides');
+    const totalSlides = 4;
+    const dots = document.querySelectorAll('.nav-dot');
+
+    function updateSlider() {
+        const translateX = -currentSlide * 100;
+        slides.style.transform = `translateX(${translateX}%)`;
+        dots.forEach((dot, index) => {
+            dot.classList.toggle('active', index === currentSlide);
+        });
+    }
+
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % totalSlides;
+        updateSlider();
+    }
+
+    function previousSlide() {
+        currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+        updateSlider();
+    }
+
+    function goToSlide(index) {
+        currentSlide = index;
+        updateSlider();
+    }
+
+    // Expose functions globally so HTML onclick works
+    window.nextSlide = nextSlide;
+    window.previousSlide = previousSlide;
+    window.goToSlide = goToSlide;
+
+    setInterval(nextSlide, 5000);
+
+    document.querySelectorAll('.slide').forEach(slide => {
+        slide.addEventListener('mouseenter', () => {
+            slide.style.transform = 'scale(1.02)';
+        });
+        slide.addEventListener('mouseleave', () => {
+            slide.style.transform = 'scale(1)';
+        });
+    });
+}
+
+// ==============================================
 // Scroll Progress Indicator
 // ==============================================
 function initScrollProgress() {
@@ -192,21 +241,6 @@ function initFormHandling() {
 }
 
 // ==============================================
-// Interactive Code Window
-// ==============================================
-function initCodeWindow() {
-    const codeWindow = document.querySelector('.code-window');
-    
-    codeWindow.addEventListener('mouseenter', () => {
-        codeWindow.style.transform = 'scale(1.02)';
-    });
-    
-    codeWindow.addEventListener('mouseleave', () => {
-        codeWindow.style.transform = 'scale(1)';
-    });
-}
-
-// ==============================================
 // Counter Animation
 // ==============================================
 function animateCounters() {
@@ -248,10 +282,10 @@ window.addEventListener('DOMContentLoaded', () => {
     createParticles();
     initSmoothScrolling();
     initHeaderScroll();
+    initHeroSlider();
     initScrollProgress();
     initScrollAnimations();
     initFormHandling();
-    initCodeWindow();
     animateCounters();
 
     // Remove loading bar after animation
