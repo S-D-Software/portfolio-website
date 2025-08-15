@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S.D Software - Next-Generation Development Studio</title>
+
+    <!-- Link CSS file -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-theme="dark">
+    <!-- Loading Animation -->
+    <div class="loading-bar"></div>
+    
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+    
+    <!-- Animated Background Particles -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Header & Navigation -->
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">S.D Software</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"></button>
+                <a href="#contact" class="cta-button">Let's Build</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="section hero">
+         <div class="container">
+        <section class="hero">
+            <div class="hero-content">
+                <div class="badge">
+                    Next-Generation Development Studio
+                </div>
+                
+                <h1>Transform Ideas Into Digital Reality</h1>
+                
+                <p>We architect cutting-edge software solutions that push boundaries and redefine possibilities. From concept to deployment, we build the future of technology.</p>
+
+                <div class="hero-buttons">
+                    <a href="#services" class="btn-primary">Start Your Journey</a>
+                    <a href="#portfolio" class="btn-secondary">Explore Services</a>
+                </div>
+
+                <div class="stats">
+                    <div class="stat">
+                        <span class="stat-number">100+</span>
+                        <span class="stat-label">Projects Delivered</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Happy Clients</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">99%</span>
+                        <span class="stat-label">Success Rate</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="code-window">
+                    <div class="window-header">
+                        <div class="window-controls">
+                            <div class="control"></div>
+                            <div class="control"></div>
+                            <div class="control"></div>
+                        </div>
+                        <div class="file-name">innovation.js</div>
+                    </div>
+                    <div class="code-content">
+                        <span class="code-line"><span class="keyword">const</span> <span class="function">future</span> = <span class="keyword">await</span> <span class="function">SDSoftware</span>.<span class="property">create</span>({</span>
+                        <span class="code-line">  <span class="property">innovation</span>: <span class="string">'unlimited'</span>,</span>
+                        <span class="code-line">  <span class="property">performance</span>: <span class="string">'blazing-fast'</span>,</span>
+                        <span class="code-line">  <span class="property">scalability</span>: <span class="string">'infinite'</span></span>
+                        <span class="code-line">});</span>
+                        <span class="code-line"><span class="comment">// Your dreams, our code ✨</span></span>
+                    </div>
+                </div>
+
+                <div class="feature-cards">
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Lightning Fast</h3>
+                        <p>Optimized for speed and performance</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔒</div>
+                        <h3>Enterprise Security</h3>
+                        <p>Bank-grade security protocols</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>Comprehensive software solutions tailored to your business needs. We deliver excellence across every aspect of digital development.</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🚀</div>
+                    <h3>Web Development</h3>
+                    <p>Modern, responsive web applications built with cutting-edge technologies and optimized for performance.</p>
+                    <ul class="service-features">
+                        <li>React, Vue.js, Angular frameworks</li>
+                        <li>Progressive Web Apps (PWA)</li>
+                        <li>Server-side rendering (SSR)</li>
+                        <li>API integration and development</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">📱</div>
+                    <h3>Mobile Development</h3>
+                    <p>Native and cross-platform mobile solutions that deliver exceptional user experiences across all devices.</p>
+                    <ul class="service-features">
+                        <li>iOS and Android native apps</li>
+                        <li>React Native & Flutter</li>
+                        <li>App Store optimization</li>
+                        <li>Mobile-first design approach</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">☁️</div>
+                    <h3>Cloud Solutions</h3>
+                    <p>Scalable cloud infrastructure and services that grow with your business and ensure maximum uptime.</p>
+                    <ul class="service-features">
+                        <li>AWS, Google Cloud, Azure</li>
+                        <li>Microservices architecture</li>
+                        <li>DevOps and CI/CD pipelines</li>
+                        <li>Container orchestration</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🤖</div>
+                    <h3>AI & Machine Learning</h3>
+                    <p>Intelligent solutions powered by artificial intelligence and machine learning algorithms.</p>
+                    <ul class="service-features">
+                        <li>Custom AI model development</li>
+                        <li>Natural language processing</li>
+                        <li>Computer vision solutions</li>
+                        <li>Predictive analytics</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🔒</div>
+                    <h3>Cybersecurity</h3>
+                    <p>Comprehensive security solutions to protect your digital assets and ensure data integrity.</p>
+                    <ul class="service-features">
+                        <li>Security audits and assessments</li>
+                        <li>Penetration testing</li>
+                        <li>Compliance management</li>
+                        <li>Incident response planning</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">⚡</div>
+                    <h3>Performance Optimization</h3>
+                    <p>Speed and efficiency optimization to ensure your applications perform at their absolute best.</p>
+                    <ul class="service-features">
+                        <li>Code optimization and refactoring</li>
+                        <li>Database performance tuning</li>
+                        <li>Load testing and monitoring</li>
+                        <li>CDN implementation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>About S.D Software</h2>
+                <p>We're a team of passionate developers, designers, and strategists committed to delivering exceptional digital experiences.</p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Building Tomorrow's Software Today</h2>
+                    <p>Founded on the principle that great software can change the world, S.D Software has been at the forefront of digital innovation for over a decade. We combine technical expertise with creative vision to deliver solutions that not only meet today's needs but anticipate tomorrow's challenges.</p>
+                    
+                    <p>Our team of expert developers, architects, and consultants work collaboratively with clients to understand their unique requirements and deliver customized solutions that drive real business value.</p>
+
+                    <div class="about-metrics">
+                        <div class="metric">
+                            <span class="metric-number">10+</span>
+                            <span class="metric-label">Years Experience</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-number">50+</span>
+                            <span class="metric-label">Team Members</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-number">25+</span>
+                            <span class="metric-label">Countries Served</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-number">150+</span>
+                            <span class="metric-label">Projects Completed</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-visual">
+                    <div class="tech-stack">
+                        <div class="tech-item">
+                            <span class="tech-icon">⚛️</span>
+                            <span class="tech-name">React</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-icon">🟢</span>
+                            <span class="tech-name">Node.js</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-icon">🐍</span>
+                            <span class="tech-name">Python</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-icon">☁️</span>
+                            <span class="tech-name">AWS</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-icon">🔥</span>
+                            <span class="tech-name">Firebase</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-icon">🐳</span>
+                            <span class="tech-name">Docker</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-icon">📊</span>
+                            <span class="tech-name">GraphQL</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-icon">🚀</span>
+                            <span class="tech-name">Next.js</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-icon">⚙️</span>
+                            <span class="tech-name">Kubernetes</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Ready to start your next project? Let's discuss how we can help bring your vision to life.</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Let's Build Something Amazing</h2>
+                    <p>Whether you're a startup looking to build your first product or an enterprise seeking to modernize your systems, we're here to help. Get in touch and let's discuss your project.</p>
+
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">📧</div>
+                            <div>
+                                <h4>Email Us</h4>
+                                <p>hello@sdsoftware.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">📞</div>
+                            <div>
+                                <h4>Call Us</h4>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">📍</div>
+                            <div>
+                                <h4>Visit Us</h4>
+                                <p>123 Innovation Drive, Tech City, TC 12345</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">💬</div>
+                            <div>
+                                <h4>Live Chat</h4>
+                                <p>Available 24/7 for support</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="company">Company (Optional)</label>
+                        <input type="text" id="company" name="company">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="project">Project Type</label>
+                        <select id="project" name="project" style="width: 100%; padding: 1rem; background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 10px; color: var(--text-primary);">
+                            <option value="">Select a service</option>
+                            <option value="web">Web Development</option>
+                            <option value="mobile">Mobile Development</option>
+                            <option value="cloud">Cloud Solutions</option>
+                            <option value="ai">AI & Machine Learning</option>
+                            <option value="security">Cybersecurity</option>
+                            <option value="optimization">Performance Optimization</option>
+                            <option value="consultation">Technical Consultation</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Project Details</label>
+                        <textarea id="message" name="message" placeholder="Tell us about your project, timeline, and requirements..." required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary" style="width: 100%;">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Company Info -->
+                <div class="footer-section">
+                    <div class="footer-logo">S.D Software</div>
+                    <p class="footer-description">
+                        Transforming ideas into digital reality with cutting-edge software solutions. 
+                        We build the future of technology, one project at a time.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <span class="social-icon">💼</span>
+                        </a>
+                        <a href="#" class="social-link" aria-label="GitHub">
+                            <span class="social-icon">🐙</span>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <span class="social-icon">🐦</span>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Dribbble">
+                            <span class="social-icon">🎨</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Services -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#services">Web Development</a></li>
+                        <li><a href="#services">Mobile Apps</a></li>
+                        <li><a href="#services">Cloud Solutions</a></li>
+                        <li><a href="#services">AI & Machine Learning</a></li>
+                        <li><a href="#services">Cybersecurity</a></li>
+                        <li><a href="#services">Performance Optimization</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Company</h3>
+                    <ul class="footer-links">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#about">Our Team</a></li>
+                        <li><a href="#contact">Careers</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#about">Case Studies</a></li>
+                        <li><a href="#contact">Blog</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="#contact">Documentation</a></li>
+                        <li><a href="#contact">API Reference</a></li>
+                        <li><a href="#contact">Support Center</a></li>
+                        <li><a href="#contact">Status Page</a></li>
+                        <li><a href="#contact">Privacy Policy</a></li>
+                        <li><a href="#contact">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Get In Touch</h3>
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <div class="contact-details">
+                                <span class="contact-label">Email</span>
+                                <a href="mailto:hello@sdsoftware.com">hello@sdsoftware.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📞</span>
+                            <div class="contact-details">
+                                <span class="contact-label">Phone</span>
+                                <a href="tel:+15551234567">+1 (555) 123-4567</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <div class="contact-details">
+                                <span class="contact-label">Address</span>
+                                <span>123 Innovation Drive<br>Tech City, TC 12345</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Newsletter Signup -->
+            <div class="newsletter-section">
+                <div class="newsletter-content">
+                    <div class="newsletter-text">
+                        <h3>Stay Updated</h3>
+                        <p>Get the latest insights on technology trends and software development delivered to your inbox.</p>
+                    </div>
+                    <form class="newsletter-form">
+                        <div class="newsletter-input-group">
+                            <input type="email" placeholder="Enter your email address" required>
+                            <button type="submit" class="newsletter-btn">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p class="copyright">
+                        © 2025 S.D Software. All rights reserved. Built with ❤️ by our amazing team.
+                    </p>
+                    <div class="footer-bottom-links">
+                        <a href="#contact">Privacy</a>
+                        <a href="#contact">Terms</a>
+                        <a href="#contact">Cookies</a>
+                        <a href="#contact">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Link JS file -->
+    <script src="js/main.js"></script>
+</body>
+</html>
