@@ -547,13 +547,17 @@ body {
     animation: pulse 2s infinite;
 }
 
+.badge img {
+    width: 20px;
+    height: 20px;
+}
+
 @keyframes pulse {
     0%, 100% { transform: scale(1); }
     50% { transform: scale(1.05); }
 }
 
-.badge::before {
-    content: '🚀';
+.badge img {
     animation: rocket 2s ease-in-out infinite;
 }
 
@@ -793,6 +797,11 @@ body {
     justify-content: center;
     font-size: 2rem;
     margin-bottom: 1.5rem;
+}
+
+.service-icon img {
+    width: 50%;
+    height: 50%;
 }
 
 .service-card h3 {
